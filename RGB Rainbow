@@ -1,0 +1,75 @@
+public void changeC() {
+		if(r==255&&g==0&&b==0) {
+			for(g=0;g<255;g++) {
+				
+				try {
+					repaint();
+					System.out.println("R: "+r+"\tG: "+g+"\tB: "+b);
+					Thread.sleep(5);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}	
+			};
+		}
+		else if(r==255&&g==255&&b==0) {
+			for(r=255;r>0;r--) {
+				try {
+					repaint();
+					System.out.println("R: "+r+"\tG: "+g+"\tB: "+b);
+					Thread.sleep(5);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			};
+		}
+		else if(r==0&&g==255&&b==0) {
+			for(b=0;b<255;b++) {
+				try {
+					repaint();
+					System.out.println("R: "+r+"\tG: "+g+"\tB: "+b);
+					Thread.sleep(5);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			};
+		}
+		else if(b==255&&r==0&&g==255) {
+			for(g=255;g>0;g--) {
+				try {
+					repaint();
+					System.out.println("R: "+r+"\tG: "+g+"\tB: "+b);
+					Thread.sleep(5);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			};
+		}
+		else if(r==0&&b==255&&g==0) {
+			for(r=0;r<255;r++) {
+				try {
+					repaint();
+					System.out.println("R: "+r+"\tG: "+g+"\tB: "+b);
+					Thread.sleep(5);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			};
+		}
+		else if(r==255&&b==255&&g==0) {
+			for(b=255;b>0;b--) {
+				try {
+					repaint();
+					System.out.println("R: "+r+"\tG: "+g+"\tB: "+b);
+					Thread.sleep(5);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			};
+		}
+		}
